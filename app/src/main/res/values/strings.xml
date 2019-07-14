@@ -3,6 +3,7 @@
     <string name="janken_text">じゃん・けん・・・</string>
     <string name="back_text">戻る</string>
     <string name="result_win">あなたの勝ちです</string>
-    <string name="result_lose">コンピュータの勝ちです</string>
+    <string name="result_lose">うふふ、わたしの勝ちね♪</string>
     <string name="result_draw">あいこちゃん！</string>
+    <string name="pon_text">ぽんっ！！</string>
 </resources>
