@@ -65,10 +65,16 @@ class ResultActivity : AppCompatActivity() {
             }
         }, 1600)
 
+        //画面のどこからでも戻れるようにしている
         backButton.setOnClickListener { finish()}
+        screen.setOnClickListener { finish()}
+        myHandImage.setOnClickListener { finish()}
+        comHandImage.setOnClickListener { finish()}
 
+        //セーブは後で
         saveData(myHand , comHand , gameResult)
 
+        //セーブ後にカウントをする
         val pref = PreferenceManager.getDefaultSharedPreferences(this)
         val gameCount = pref.getInt("GAME_COUNT", 0)
         loseCount.setText("${gameCount}回目")
